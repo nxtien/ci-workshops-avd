@@ -114,6 +114,15 @@ local_users:
   sha512_password: $6$arista$ka0EaDAFm2A6tSYB1NGRyC8WYN19l62cT92I84vljtRPAMaSo.2yZmneXao3Ob8TpOocO7nECyCV6iJmVK2ZS.
   ssh_key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDEZg6zKS4fpZG/JQy9Gro5DSI4wfsFiK8YLkuG8vNaps6Vo7njHKD5pOmbeDD4J9UKWnZf1QjNIwboFKxnQZFWIPz7ceL0nWdTq3HOr3YW75sHMGF1Qzd0PeDFtBWDH3Sa8PeVcxpxfrhSFHwBlB6buHlz736hMHXA5aY/3f6R9Go7rp1sHB9JiH7JFYks2cChGwdXJNbGSZVEj0F/NEHAqyOo6YCruS04mpuFsB55lEus45GNT8NZke0+RJL0p86xLNB8119nvaT9qkPwQF8Hva/xTZ0+cFROjeqhHyqQeyrlJSlxMLE9plpf7pNb/NHCdLsqcj+7DZRX7+QzaBE9
     arista@toronto-day2-32-1c55ad53-eos
+logging:
+  vrfs:
+  - name: default
+    source_interface: Management0
+    hosts:
+    - name: 10.200.0.108
+      protocol: udp
+    - name: 10.200.1.108
+      protocol: udp
 loopback_interfaces:
 - name: Loopback0
   description: ROUTER_ID
